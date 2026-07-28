@@ -59,3 +59,4 @@ export const clearSessionCookie = `${cookieName}=; Path=/; HttpOnly; Secure; Sam
 export const redirectUri = () => process.env.META_REDIRECT_URI || `${process.env.URL}/.netlify/functions/meta-callback`;
 export const appId = () => required("META_APP_ID");
 export const appSecret = () => required("META_APP_SECRET");
+export default async () => new Response("Not found", { status: 404 });
