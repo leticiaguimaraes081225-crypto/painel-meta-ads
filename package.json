@@ -1,9 +1,1 @@
-{
-  "name": "painel-meta-ads",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "dependencies": {
-    "@netlify/functions": "^4.0.0"
-  }
-}
+{"name":"painel-meta-ads-completo","private":true,"version":"1.0.0","type":"module"}

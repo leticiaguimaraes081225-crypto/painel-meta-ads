@@ -1,5 +1,30 @@
 [build]
   publish = "."
-functions = "."
+  functions = "."
+
 [functions]
   node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/.netlify/functions/meta-connect"
+  to = "/.netlify/functions/meta?mode=connect"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/.netlify/functions/meta-callback"
+  to = "/.netlify/functions/meta?mode=callback"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/.netlify/functions/meta-dashboard"
+  to = "/.netlify/functions/meta?mode=dashboard"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/.netlify/functions/meta-disconnect"
+  to = "/.netlify/functions/meta?mode=disconnect"
+  status = 200
+  force = true
